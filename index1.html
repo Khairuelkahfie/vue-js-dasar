@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>belajar vue js directive-conditional directive v-if</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- <p v-if="!show">-->
+        <!-- <p v-if="show == 'ready' ">  ketika nilainya ready maka diakan menapilkan datanya-->
+        <!-- <p v-if="show">
+            {{mesage}}
+        </p>
+        <p v-else="show">
+            {{mesage2}}
+        </p>
+        akan menapilkan salah satu dari measge tergantung dari kondisi yang diberikan di app.js
+        -->
+        <p v-if="show">
+            {{mesage}}
+        </p>
+        <p v-else="show">
+            {{mesage2}}
+        </p>
+    </div>
+
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>directive v-model in textarea</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="mesage" style="margin:10px;">
+        {{mesage}}
+        <br>
+        <textarea cols="30" rows="20" type="text" v-model="textarea"> </textarea>
+        <br>
+        <p style="white-space: pre-line">{{textarea}}</p>
+
+
+
+
+    </div>
+
+
+
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app6.js"></script>
+</body>
+
+</html>

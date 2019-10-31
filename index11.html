@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-on for key modifier</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <label for=""> enter kunci keyboard</label>
+        <input type="text" v-on:keyup.enter="mesage ='your pressing enter'">
+        <br>
+        <label for="">silahkan tekan tombol</label>
+        <input type="text" @keyup.esc="tombolesc" @keyup.space="tombolspasi" @keyup.up="tombolatas"
+            @keyup.down="tombolbawah" @keyup.65="tombolA">
+        <br>
+        {{mesage}}
+    </div>
+
+
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app11.js"></script>
+</body>
+
+</html>

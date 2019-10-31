@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>method propertis</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>
+            {{message}}
+        </p>
+
+        <p>
+            {{sum}}
+        </p>
+        <p>
+            hasil dari {{int1}} + {{int2}} adalah {{result}}
+        </p>
+        <!-- v-on:click adalah memberikan aksi ketika sudah di kelik -->
+        <!-- 4 adalah nilai parameter yang kita kirmikan ke app js (int3) -->
+        <button v-on:click="sumproses(5)">proses</button>
+
+
+    </div>
+
+
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app3.js"></script>
+</body>
+
+</html>

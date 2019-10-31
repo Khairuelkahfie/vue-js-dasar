@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>V-bind for dinamyc HTML</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-bind:src= untuk memanggil tempat penyimpanan gamabar -->
+        <img v-bind:src="img" alt="">
+        <a v-bind:href="link">link</a>
+        <p v-bind:style="fontstyle">
+            khairul kahfie
+        </p>
+    </div>
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app9.js"></script>
+</body>
+
+</html>

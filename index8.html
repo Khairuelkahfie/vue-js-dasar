@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Direvtive v-model in chekbox and select dropdown</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <input type="text" v-model="mesage">
+        <br>
+        <p>
+            {{mesage}}
+        </p>
+        <br>
+        <textarea name="" v-model="textarea" type="text" id="" cols="30" rows="10"></textarea>
+        <br>
+        <p style="white-space: pre-line;">
+            {{textarea}}
+        </p>
+        <br>
+        <input type="radio" v-model="radiobutton" value="aku"> akuu
+        <input type="radio" v-model="radiobutton" value="kamu"> kamuu
+        <br>
+        kamu pilih siapa (radiobutton): {{radiobutton}}
+        <br>
+
+        <label for="">akuuu</label>
+        <input type="checkbox" v-model="chekbox" value="aku">
+        <br>
+        <label for="">kamuu</label>
+        <input type="checkbox" v-model="chekbox" value="kamu">
+        <br>
+        yang kamu suka adalah {{chekbox}}
+
+        <ul>
+
+            <li v-for="choice in chekbox">
+                {{choice}}
+            </li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+        framework yang kamu pilih:
+        <!-- multiple adalah dapat memilih lebih dari satu  -->
+        <select v-model="select" multiple>
+            <option value="" disabled> pilih bahasa pemrogaraman</option>
+            <option value="javacript">javacript</option>
+            <option value="c++"> C++</option>
+            <option value="c#">C#</option>
+            <option value="python">python</option>
+        </select>
+        <br>
+        bahasa yang kamu pilih {{select}}
+
+        <br>
+        <ul>
+            <!-- sel in  select artinya membuat model baru dengan mengambil data dari model select -->
+            <li v-for="sel in select">{{ sel }}</li>
+        </ul>
+
+    </div>
+
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app8.js"></script>
+</body>
+
+</html>

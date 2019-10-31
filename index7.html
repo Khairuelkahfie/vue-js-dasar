@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directive v-model in radiobutton</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="mesage">
+        <p>
+            {{mesage}}
+        </p>
+        <br>
+        <textarea type="text" id="" cols="30" rows="10" v-model="textarea"></textarea>
+        <p style="white-space: pre-line;">
+            {{textarea}}
+        </p>
+        <br>
+        yang kamu pilih adalah {{radiobutton}}
+        <br>
+        <input type="radio" v-model="radiobutton" value="aku"> aku atau
+        <input type="radio" v-model="radiobutton" value="dia"> dia
+        <br>
+
+    </div>
+
+
+    <script src="asset/vendor/vue.js"></script>
+    <script src="asset/js/app7.js"></script>
+</body>
+
+</html>
